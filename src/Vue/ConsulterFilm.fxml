@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@AdminPanel.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vue.ConsulterFilmController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@AdminPanel.css">
+               <children>
+                  <Label text="Titre de Film a Consulter" />
+                  <TextField fx:id="TitreFilm">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#RechercherClicked" text="Rechercher" />
+               </children>
+               <opaqueInsets>
+                  <Insets left="10.0" right="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="List des Evaluations pour ce film" />
+               </children>
+            </HBox>
+            <TableView fx:id="tableevaluation" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="Note" prefWidth="89.59997701644897" style="-fx-text-fill: red;" text="Note" />
+                <TableColumn fx:id="Commentaire" prefWidth="263.99999237060547" style="-fx-text-fill: red;" text="Commentaire" />
+                  <TableColumn fx:id="Film" prefWidth="96.0" style="-fx-text-fill: red;" text="Film" />
+                  <TableColumn fx:id="utilisateur" prefWidth="148.80007934570312" style="-fx-text-fill: red;" text="Utilisateur" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Label fx:id="erreur" layoutX="296.0" layoutY="398.0" />
+   </children>
+</AnchorPane>

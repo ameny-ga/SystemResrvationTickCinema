@@ -1,0 +1,76 @@
+/* General styles for the entire AnchorPane */
+#AnchorPane {
+    -fx-background-color: #1a1a1a; /* Black background */
+    -fx-padding: 20px;
+    -fx-border-color: #ff0000; /* Red border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+/* Style for the labels */
+Label {
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+}
+
+/* Style for the text fields */
+TextField, PasswordField {
+    -fx-background-color: #333333; /* Dark gray background */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 14px;
+    -fx-border-color: #ff0000; /* Red border */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+TextField:focused, PasswordField:focused {
+    -fx-border-color: #ffffff; /* White border on focus */
+}
+
+/* Style for the buttons */
+Button {
+    -fx-background-color: #ff0000; /* Red background */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.3), 10, 0.5, 0, 0);
+}
+
+Button:hover {
+    -fx-background-color: #cc0000; /* Darker red on hover */
+}
+
+Button:pressed {
+    -fx-background-color: #990000; /* Even darker red on press */
+}
+
+/* Style for the Submit button */
+#SigninButton {
+    -fx-background-color: #ff0000; /* Highlighted red */
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.5), 10, 0.8, 0, 0);
+}
+
+#SigninButton:hover {
+    -fx-background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Style for the Cancel button */
+Button[text="Cancel"] {
+    -fx-background-color: #333333; /* Dark gray background */
+    -fx-text-fill: white; /* White text */
+    -fx-border-color: #ff0000; /* Red border */
+    -fx-border-width: 2px;
+}
+
+Button[text="Cancel"]:hover {
+    -fx-background-color: #444444; /* Slightly lighter gray */
+}
+

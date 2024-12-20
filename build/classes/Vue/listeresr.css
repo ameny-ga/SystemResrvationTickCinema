@@ -1,0 +1,36 @@
+.root {
+    -fx-background-color: black;
+}
+
+.header-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FF3B3B; /* Rouge vif */
+}
+
+.label-bold {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #FF3B3B;
+}
+
+.label-data {
+    -fx-font-size: 14px;
+    -fx-text-fill: #E0E0E0; /* Gris clair */
+}
+
+.table-view {
+    -fx-border-color: red;
+    -fx-border-width: 2px;
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-selection-bar: #ff3333;
+    -fx-selection-bar-text: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #ff4444, #cc0000);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

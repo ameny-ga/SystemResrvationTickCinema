@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="anhide" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vue.UserController">
+   <children>
+      <!-- Partie gauche -->
+      <VBox prefHeight="546.0" prefWidth="216.0" styleClass="left-pane">
+         <children>
+            <Label alignment="TOP_RIGHT" contentDisplay="RIGHT" styleClass="header-label" text="User Details" />
+            <Label lineSpacing="4.0" styleClass="label-bold" text="Name:" />
+            <Label fx:id="name" prefHeight="18.0" prefWidth="194.0" styleClass="label" text="exmple name" />
+            <Label styleClass="label-bold" text="Email:" />
+            <Label fx:id="email" layoutX="10.0" layoutY="63.0" prefHeight="18.0" prefWidth="180.0" styleClass="label" text="Email@exmple.com" />
+            <Label layoutX="10.0" layoutY="99.0" prefHeight="18.0" prefWidth="180.0" styleClass="label-bold" text="Montant:" />
+            <Label fx:id="mn" layoutX="10.0" layoutY="117.0" prefHeight="18.0" prefWidth="180.0" styleClass="montant-label" text="500.0 DT" />
+            <HBox prefHeight="50.0" stylesheets="@styleuser.css">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#ConsulterFilmClicked" prefHeight="48.0" prefWidth="165.0" text="Consulter Film" />
+               </children></HBox>
+            <!-- Boutons -->
+            <Button mnemonicParsing="false" onAction="#ClickedAfficherEvaluations" styleClass="button" text="Afficher Évaluations">
+               <VBox.margin>
+                  <Insets top="1.5" />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" onAction="#ClickedAfficherReservations" styleClass="button" text="Afficher Réservations" />
+            <Button fx:id="Quiter" mnemonicParsing="false" onAction="#QuiterButtonClicked" text="Quiter" />
+         </children>
+      </VBox>
+
+      <!-- Partie droite -->
+      <VBox layoutX="210.0" prefHeight="546.0" prefWidth="657.0" styleClass="right-pane" stylesheets="@styleuser.css">
+         <children>
+            <Label styleClass="header-label" text="Séances Disponibles" />
+            <!-- Grille pour les images -->
+            <GridPane alignment="CENTER" hgap="20" prefHeight="350.0" prefWidth="382.0" vgap="20">
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="239.6" minHeight="132.0000244140625" prefHeight="239.6" />
+                  <RowConstraints maxHeight="125.59997558593753" minHeight="0.0" prefHeight="0.0" />
+                  <RowConstraints maxHeight="125.59997558593753" minHeight="0.0" prefHeight="0.0" />
+               </rowConstraints>
+               <children>
+                  <TableView fx:id="seancesTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="218.0" prefWidth="499.0" stylesheets="@AdminPanel.css" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <columns>
+                        <TableColumn fx:id="IDSeance" prefWidth="80.79997253417969" text="IDSeance">
+                           <style>-fx-text-fill: red;</style>
+                        </TableColumn>
+                        <TableColumn fx:id="Titrefilm" prefWidth="119.20001220703125" text="Titre de film">
+                           <style>
+                              -fx-text-fill: red;
+                           </style>
+                        </TableColumn>
+                        <TableColumn fx:id="labelleS" prefWidth="105.59992980957031" text=" Labelle Salle">
+                           <style>
+                              -fx-text-fill: red;
+                           </style>
+                        </TableColumn>
+                        <TableColumn fx:id="Dateseance" prefWidth="282.40008544921875" style="&#10;                              -fx-text-fill: red;&#10;                           " text="Date Seance" />
+                     </columns>
+                  </TableView>
+               </children>
+            </GridPane>
+            <!-- Ajouter les boutons -->
+            <HBox alignment="CENTER" spacing="20" VBox.vgrow="ALWAYS">
+               <Button mnemonicParsing="false" onMousePressed="#voirSeancesNouveaux" styleClass="button" text="NouveauxSeance" />
+               <Button lineSpacing="10.0" mnemonicParsing="false" onAction="#ClickedAttribuerFilm" prefHeight="41.0" prefWidth="144.0" styleClass="button" text="Reserver Seance" />
+               <Button layoutX="180.0" layoutY="22.0" mnemonicParsing="false" onAction="#ClickedEvaluerFilm" styleClass="button" text="Évaluer Film" />
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      
+      <URL value="@styleuser.css" />
+   </stylesheets>
+</AnchorPane>

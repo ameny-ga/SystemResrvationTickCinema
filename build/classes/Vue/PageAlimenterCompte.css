@@ -1,0 +1,49 @@
+/* General styling */
+.root {
+    -fx-background-color: black; /* Set the background to black */
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+/* Label styling */
+.label {
+    -fx-text-fill: white; /* White text for labels */
+    -fx-font-size: 16px;
+}
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: #2d2d2d; /* Dark gray background for text fields */
+    -fx-text-fill: white; /* White text inside the text fields */
+    -fx-border-color: #444; /* Border with a subtle gray tone */
+    -fx-border-width: 1px;
+    -fx-prompt-text-fill: #888; /* Light gray for placeholder text */
+    -fx-padding: 5px;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: red; /* Red background for buttons */
+    -fx-text-fill: white; /* White text on buttons */
+    -fx-font-weight: bold;
+    -fx-border-color: #990000; /* Slightly darker red border for a polished look */
+    -fx-border-width: 2px;
+    -fx-padding: 8px 16px; /* Padding for better button shape */
+    -fx-cursor: hand; /* Change cursor to pointer on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 0, 0.5), 5, 0.3, 0, 0);
+}
+
+/* Button hover effect */
+.button:hover {
+    -fx-background-color: #cc0000; /* Darker red on hover */
+    -fx-border-color: #660000; /* Adjusted border color for hover effect */
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 0, 0.7), 8, 0.5, 0, 0);
+}
+
+/* Error label styling */
+#ErreurUtilisateurNonTrouve {
+    -fx-text-fill: red; /* Red text for error messages */
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+    -fx-padding: 10px 0;
+}

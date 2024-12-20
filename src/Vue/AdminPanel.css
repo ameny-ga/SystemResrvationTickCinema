@@ -1,0 +1,100 @@
+/* General Panel Styling */
+.root {
+    -fx-font-family: "Arial, sans-serif";
+    -fx-background-color: #1e1e1e; /* Dark gray background */
+    -fx-padding: 10px;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #ffffff; /* White text for visibility */
+    -fx-font-size: 14px;
+}
+
+.label:first-child {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff4c4c; /* Red for the main title */
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #ff4c4c; /* Red buttons for emphasis */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.5, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #e63939; /* Slightly darker red on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #c62828; /* Even darker red when clicked */
+}
+
+/* SplitPane */
+.split-pane {
+    -fx-divider-width: 2px;
+    -fx-divider-color: #ff4c4c; /* Red divider for distinction */
+}
+
+/* AnchorPane */
+.anchor-pane {
+    -fx-background-color: #2e2e2e; /* Light gray for separation */
+    -fx-border-color: #ff4c4c; /* Red border for a clean layout */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+
+/* TableView */
+.table-view {
+    -fx-background-color: #333333; /* Darker gray for table background */
+    -fx-border-color: #ff4c4c; /* Red border for emphasis */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: white;
+}
+
+.table-column {
+    -fx-alignment: CENTER; /* Center alignment for table content */
+    -fx-font-size: 12px;
+    -fx-background-color: #444444; /* Slightly lighter gray for columns */
+}
+
+/* Specific Panels */
+.anchor-pane > .children > .label {
+    -fx-margin-bottom: 5px; /* Add spacing below labels */
+}
+
+#AjouterSeance {
+    -fx-background-color: #ff4c4c; /* Red button for adding sessions */
+}
+
+#AjouterSeance:hover {
+    -fx-background-color: #e63939; /* Slightly darker red on hover */
+}
+
+#CalculerRevenue {
+    -fx-background-color: #ff4c4c; /* Red button for revenue calculation */
+}
+
+#CalculerRevenue:hover {
+    -fx-background-color: #e63939; /* Slightly darker red on hover */
+}
+
+#Quite {
+    -fx-background-color: #ff4c4c; /* Red button for Quit */
+}
+
+#Quite:hover {
+    -fx-background-color: #e63939; /* Slightly darker red on hover */
+}
+.red-text-column .table-cell {
+    -fx-text-fill: red;
+}

@@ -1,0 +1,79 @@
+.bodybg{-fx-background-image: url("CinemaBackground.jpg");
+-fx-background-size: cover;
+-fx-background-repeat: no-repeat;
+}
+.label-cinema-name {
+    /* Custom font settings */
+    -fx-font-family: "Arial Black", "Verdana", sans-serif;
+    -fx-font-size: 36px;
+    -fx-text-fill: linear-gradient(to bottom, #FFD700, #FF4500);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0.5, 2, 2);
+
+    /* Padding and alignment */
+    -fx-padding: 10px;
+    -fx-alignment: center;
+
+    /* Border and background */
+    -fx-background-color: radial-gradient(center 50% 50%, radius 50%, #333333, #000000);
+    -fx-border-color: #FFD700;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+
+    /* Animation (optional hover effect) */
+    -fx-transition: all 0.3s ease;
+}
+
+.label-cinema-name:hover {
+    -fx-text-fill: linear-gradient(to bottom, #FF6347, #FFD700);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+.button-role {
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-width: 2;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 2, 2);
+    -fx-transition: all 0.3s ease;
+}
+
+/* User Button Style */
+.button-user {
+    -fx-background-color: #ff0000; /* Red */
+    -fx-border-color: #cc0000; /* Darker red */
+}
+
+.button-user:hover {
+    -fx-background-color: #cc0000; /* Darker red on hover */
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Administrator Button Style */
+.button-admin {
+    -fx-background-color: #ff0000; /* Red */
+    -fx-border-color: #cc0000; /* Darker red */
+}
+
+.button-admin:hover {
+    -fx-background-color: #cc0000; /* Darker red on hover */
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Visitor Button Style */
+.button-visitor {
+    -fx-background-color: #ff0000; /* Red */
+    -fx-border-color: #cc0000; /* Darker red */
+}
+
+.button-visitor:hover {
+    -fx-background-color: #cc0000; /* Darker red on hover */
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
